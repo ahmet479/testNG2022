@@ -16,7 +16,7 @@ public class LoginPage {
     @FindBy(id = "Password")
     public WebElement password;
 
-    @FindBy(id = "UserName")
-    public WebElement usernam;
+    @FindBy(id = "btnSubmit")
+    public WebElement loginButton;
 
 }

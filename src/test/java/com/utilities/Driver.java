@@ -20,38 +20,38 @@ public class Driver {
      */
 
     public static WebDriver getDriver() {
-        if (driver==null){
-            WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver();
-            driver.manage().window().maximize();
-            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-               }
-               return driver;
-//        if (driver == null) {   //eger driver calismiyorsa
-//            switch (ConfigReader.getProperty("browser")) {
-//                case "browser":
-//                    WebDriverManager.chromedriver().setup();
-//                    driver = new ChromeDriver();
-//                    break;
-//                case "firefox":
-//                    WebDriverManager.firefoxdriver().setup();
-//                    driver = new FirefoxDriver();
-//                    break;
-//                case "chrome-headless":
-//                    WebDriverManager.chromedriver().setup();
-//                    driver = new ChromeDriver(new ChromeOptions().setHeadless(true));
-//                    break;
-//
-//            }
+//        if (driver==null){
 //            WebDriverManager.chromedriver().setup();
 //            driver = new ChromeDriver();
-//
 //            driver.manage().window().maximize();
 //            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        }
+//               }
+//               return driver;
+        if (driver == null) {   //eger driver calismiyorsa calistir
+            switch (ConfigReader.getProperty("browser")) {
+                case "chrome":
+                    WebDriverManager.chromedriver().setup();
+                    driver = new ChromeDriver();
+                    break;
+                case "firefox":
+                    WebDriverManager.firefoxdriver().setup();
+                    driver = new FirefoxDriver();
+                    break;
+                case "chrome-headless":
+                    WebDriverManager.chromedriver().setup();
+                    driver = new ChromeDriver(new ChromeOptions().setHeadless(true));
+                    break;
 
-        private static void closeDriver () {
-            if (driver != null) {  //Eger driver bir yeri isaret ediyor veya kullaniliyorsa
+            }
+
+
+            driver.manage().window().maximize();
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        }
+        return null;
+    }
+        private static void closeDriver() {
+            if (driver!= null) {  //Eger driver bir yeri isaret ediyor veya kullaniliyorsa
                 driver.close();
                 driver = null;   //Driver null yap cunku surucu yeniden baslatabiliriz/calistirabiliriz
             }

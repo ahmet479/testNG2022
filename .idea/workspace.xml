@@ -5,28 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff0e8deb-ce66-44a7-8e6c-790be0b4c6ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/pages/Day10_C6_TestAdressLoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/pages/DefaultPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/pages/Hatirlatma.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/pages/mainPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/tests/Day09_C1_TestNGAnnotation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/tests/Day09_C2_Hard_Assertion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/tests/Day09_C3_Soft_Assertion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/tests/Day09_C4_FirstDriverTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/tests/Day09_C5_FirstConfigTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/tests/Day10_C7_TestAdressLoginTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/utilities/ConfigReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/utilities/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/tests/smoketest/Day10_C8_PositiveLoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/pages/mainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pages/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tests/Day10_C7_TestAdressLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tests/Day10_C7_TestAdressLoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/utilities/Driver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +46,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.Day09_C5_FirstConfigTest">
+  <component name="RunManager" selected="TestNG.Day10_C8_PositiveLoginTest">
     <configuration name="Hatirlatma" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tests.Static.Hatirlatma" />
       <module name="testNG2022" />
@@ -87,40 +73,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day09_C3_Soft_Assertion" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="testNG2022" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.pages.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.tests.Day09_C3_Soft_Assertion" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day09_C4_FirstDriverTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="testNG2022" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.pages.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.tests.Day09_C4_FirstDriverTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Day09_C5_FirstConfigTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="testNG2022" />
       <extension name="coverage">
@@ -138,13 +90,47 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day10_C7_TestAdressLoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="testNG2022" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.tests.Day10_C7_TestAdressLoginTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day10_C8_PositiveLoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="testNG2022" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tests.smoketest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tests.smoketest" />
+      <option name="MAIN_CLASS_NAME" value="com.tests.smoketest.Day10_C8_PositiveLoginTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Day10_C8_PositiveLoginTest" />
+        <item itemvalue="TestNG.Day10_C7_TestAdressLoginTest" />
         <item itemvalue="TestNG.Day09_C5_FirstConfigTest" />
         <item itemvalue="Application.com.pages.Hatirlatma" />
         <item itemvalue="Application.Hatirlatma" />
-        <item itemvalue="TestNG.Day09_C4_FirstDriverTest" />
-        <item itemvalue="TestNG.Day09_C3_Soft_Assertion" />
       </list>
     </recent_temporary>
   </component>
