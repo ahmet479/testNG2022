@@ -8,36 +8,39 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class ConfigReader {
-    //Bu class configration.properties file/dosyadaki bilgileri okumak icin dir.
-    //Properties object olusturduk.
+
+    // Bu class configuration.properties file/dosyadaki bilgileri okumak icindir
+
+    //Properties object olusturduk
     private static Properties properties;
 
     static {
         //properties file path'i
-        String path = "configration.properties";
+        String path = "configuration.properties";
 
         try {
             //file/dosyayi ac
             FileInputStream fileInputStream = new FileInputStream(path);
-        //properties objecti aktif et/calistir.
+            // properties objecti aktif et/calistir
             properties = new Properties();
 
-          //dosyayi yukle
+            // dosyayi yukle
             properties.load(fileInputStream);
             //dosyayi kapat
             fileInputStream.close();
 
-
-        } catch (IOException e) {
-          e.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
 
     }
-    // getProperti(key) ==>value
+    // getProperti(key) ==> value
+
     public static String getProperty(String key){
         String value = properties.getProperty(key);
         return value;
 
-     //   return properties.getProperty(key);
+        // return properties.getProperty(key);
     }
+
 }

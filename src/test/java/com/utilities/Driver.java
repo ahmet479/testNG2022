@@ -13,22 +13,27 @@ public class Driver {
 
     /*
     getDriver()
-    1-setap driver
-    2-driver olustur
-    3-return driveri
-    ***Driver.getDriver()
+    1-setup driver
+    2- driver olustur
+    3- return driveri
+    *** Driver.getDriver()
      */
 
-    public static WebDriver getDriver() {
+
+    public static WebDriver getDriver(){
 //        if (driver==null){
 //            WebDriverManager.chromedriver().setup();
 //            driver = new ChromeDriver();
+//
+//
 //            driver.manage().window().maximize();
 //            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-//               }
-//               return driver;
-        if (driver == null) {   //eger driver calismiyorsa calistir
+//        }
+//        return driver;
+
+        if (driver==null) {// eger driver calismiyorsa, calistir
             switch (ConfigReader.getProperty("browser")) {
+
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
@@ -41,19 +46,22 @@ public class Driver {
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver(new ChromeOptions().setHeadless(true));
                     break;
-
-            }
-
-
-            driver.manage().window().maximize();
-            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        }
-        return null;
-    }
-        private static void closeDriver() {
-            if (driver!= null) {  //Eger driver bir yeri isaret ediyor veya kullaniliyorsa
-                driver.close();
-                driver = null;   //Driver null yap cunku surucu yeniden baslatabiliriz/calistirabiliriz
             }
         }
+
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+        return driver;
+
+
     }
+
+    public static void closeDriver(){
+        if (driver!=null){// eger driver bir yeri isaret ediyor veya kullaniliyorsa
+            driver.close();
+            driver=null; // driver null yap cunku surucu yeniden baslatabilriz/calistirabilir
+        }
+    }
+
+}
