@@ -37,7 +37,7 @@ public class Odev_RoomRezervation {
     }
     @Test
     public void roomRezervation() throws InterruptedException {
-        Thread.sleep(5000);
+        Thread.sleep(7000);
         //Hotel managemente click yap.
         defaultPage.hotelManagement.click();
 
@@ -54,14 +54,20 @@ public class Odev_RoomRezervation {
         Select select = new Select(hotelReservationPage.idUser);
         select.selectByIndex(3);
 
+        Thread.sleep(7000);
         //id user2
-        hotelReservationPage.price.sendKeys(faker.hobbit().quote());
+        Select select1 = new Select(hotelReservationPage.idHotelRoom);
+        select1.selectByIndex(5);
+
+        Thread.sleep(5000);
+        //price
+        hotelReservationPage.price.sendKeys("50000");
 
         //DateStart
-        hotelReservationPage.dateStart.sendKeys("5.10.2015");
+        hotelReservationPage.dateStart.sendKeys("5 January 2023");
 
         //dateEnd
-        hotelReservationPage.dateEnd.sendKeys("1.11.2021");
+        hotelReservationPage.dateEnd.sendKeys("8 January 2023");
 
         //adultAmount
         hotelReservationPage.adultAmount.sendKeys("2");
@@ -90,7 +96,18 @@ public class Odev_RoomRezervation {
         //saveButton
         hotelReservationPage.saveButton.click();
 
-        Driver.closeDriver();
+        //Popup mesajini verify et
+
+        Thread.sleep(5000);
+        System.out.println(hotelReservationPage.popupMessage.getText());
+
+        Assert.assertTrue(hotelReservationPage.popupMessage.getText().contains("RoomReservation was inserted successfully"));
+
+        //ok botton'onu click et
+ //       hotelReservationPage.okButton.click();
+
+
+     //   Driver.closeDriver();
 
     }
 }

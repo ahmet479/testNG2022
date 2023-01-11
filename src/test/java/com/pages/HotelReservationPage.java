@@ -32,8 +32,8 @@ public class HotelReservationPage {
     @FindBy(id = "IDUser")
     public WebElement idUser;
 
-//    @FindBy(id = "IDUser")
-//    public WebElement idHotelRoom;
+    @FindBy(id = "IDHotelRoom")
+   public WebElement idHotelRoom;
 
     @FindBy(id = "Price")
     public WebElement price;
@@ -70,5 +70,11 @@ public class HotelReservationPage {
 
     @FindBy(id = "btnSubmit")
     public WebElement saveButton;
+
+    @FindBy(xpath = "//div[@class='bootbox-body']")
+    public WebElement popupMessage;
+//
+//    @FindBy(className = "//button[@class='btn btn-primary']")
+//    public WebElement okButton;
 
 }
