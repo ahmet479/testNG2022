@@ -5,12 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff0e8deb-ce66-44a7-8e6c-790be0b4c6ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/dataprovider/Day14_C16_DataProvider1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/dataprovider/Day14_C17_DataProvider2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/dataprovider/Day14_C18_DataProvider3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/javascriptexecutor/Day14_C15_JSUtilTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parallel-testing-1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parallel-testing-2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/regressiotest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run-classes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run-groups.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run-methods.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smoketest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/paralleltesting/ManagerLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/paralleltesting/SearchItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/paralleltesting/WebTables.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/utilities/JSUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/utilities/JSUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

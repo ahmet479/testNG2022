@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Arcane-Test-Suite">
+    <test name="class-set-1">
+        <classes>
+            <class name="com.tests.Day09_C1_TestNGAnnotation"></class>
+        </classes>
+    </test>
+</suite>
